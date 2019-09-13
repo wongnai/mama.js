@@ -26,6 +26,7 @@
     "husky": "^3.0.5",
     "jest": "^24.9.0",
     "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
     "rollup": "^1.21.2",
     "rollup-plugin-includepaths": "^0.2.3",
     "rollup-plugin-terser": "^5.1.2",
