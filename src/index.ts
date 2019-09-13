@@ -1,8 +1,10 @@
-import program from 'commander'
+import commander from 'commander'
 
-program
-  .command('<name>')
+commander
+  .arguments('<name>')
   .description('create new library')
-  .action((name) => {
+  .action((name: string) => {
     console.log(name)
   })
+
+commander.parse(process.argv)
