@@ -1,0 +1,31 @@
+{
+  "name": "mama.js",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "browser": "dist/index.bundle.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wongnai/mama.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wongnai/mama.js/issues"
+  },
+  "homepage": "https://github.com/wongnai/mama.js#readme",
+  "devDependencies": {
+    "rollup": "^1.21.2",
+    "rollup-plugin-includepaths": "^0.2.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "rollup-plugin-typescript2": "^0.24.2",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3",
+    "typescript-tslint-plugin": "^0.5.4"
+  }
+}
