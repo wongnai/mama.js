@@ -1,5 +1,8 @@
-function a(b: number) {
-  console.log(b)
-}
+import program from 'commander'
 
-export default a
+program
+  .command('<name>')
+  .description('create new library')
+  .action((name) => {
+    console.log(name)
+  })
