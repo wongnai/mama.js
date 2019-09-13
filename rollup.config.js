@@ -12,7 +12,7 @@ export default {
     },
     {
       file: pkg.module,
-      format: 'es' // the preferred format
+      format: 'es'
     },
     {
       file: pkg.browser,
