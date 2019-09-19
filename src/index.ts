@@ -1,5 +1,10 @@
-function a(b: number) {
-  console.log(b)
-}
+import commander from 'commander'
 
-export default a
+commander
+  .arguments('<name>')
+  .description('create new library')
+  .action((name: string) => {
+    console.log(name)
+  })
+
+commander.parse(process.argv)
