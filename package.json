@@ -37,6 +37,8 @@
     "typescript-tslint-plugin": "^0.5.4"
   },
   "dependencies": {
-    "commander": "^3.0.1"
+    "@types/lodash": "^4.14.138",
+    "commander": "^3.0.1",
+    "lodash": "^4.17.15"
   }
 }
