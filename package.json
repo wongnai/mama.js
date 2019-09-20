@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/wongnai/mama.js#readme",
   "devDependencies": {
+    "@types/cli-progress": "^1.8.1",
     "@types/figlet": "^1.2.0",
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.138",
@@ -41,6 +42,8 @@
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
+    "cli-progress": "^3.1.0",
+    "execa": "^2.0.4",
     "figlet": "^1.2.4",
     "lodash": "^4.17.15",
     "ora": "^3.4.0"
