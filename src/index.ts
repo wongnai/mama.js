@@ -1,10 +1,13 @@
 import commander from 'commander'
+import { sayWelcome } from 'functions/welcome'
+import { createDefaultLibraryFlow } from 'workflows/createDefaultLibrary'
 
 commander
   .arguments('<name>')
-  .description('create new library')
+  .description('Create new library')
   .action((name: string) => {
-    console.log(name)
+    sayWelcome()
+    createDefaultLibraryFlow(name)
   })
 
 commander.parse(process.argv)
