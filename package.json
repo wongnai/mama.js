@@ -1,7 +1,7 @@
 {
   "name": "mama.js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Cool CLI for initialize new cool library",
   "scripts": {
     "build": "rollup -c",
     "release": "standard-version --release-as",
@@ -15,9 +15,9 @@
     "type": "git",
     "url": "git+https://github.com/wongnai/mama.js.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["mama", "mama.js", "javascript", "bundle", "library"],
+  "author": "wongnai",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wongnai/mama.js/issues"
   },
