@@ -1,9 +1,15 @@
 {
   "name": "mama-noodle",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Core package of mama.js",
   "main": "index.js",
-  "keywords": ["mama", "mama.js", "javascript", "bundle", "library"],
+  "keywords": [
+    "mama",
+    "mama.js",
+    "javascript",
+    "bundle",
+    "library"
+  ],
   "author": "wongnai",
   "license": "MIT",
   "scripts": {
