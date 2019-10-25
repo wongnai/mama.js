@@ -1,48 +1,30 @@
 {
-  "name": "mama.js",
-  "version": "1.0.0",
-  "description": "Cool CLI for initialize new cool library",
+  "name": "firebase-playground",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "release": "standard-version --release-as",
-    "prepublish": "npm run build"
-  },
-  "bin": {
-    "mama": "dist/index.js"
-  },
-  "main": "dist/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wongnai/mama.js.git"
-  },
-  "keywords": ["mama", "mama.js", "javascript", "bundle", "library"],
-  "author": "wongnai",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/wongnai/mama.js/issues"
-  },
-  "homepage": "https://github.com/wongnai/mama.js#readme",
-  "devDependencies": {
-    "@types/figlet": "^1.2.0",
-    "@types/jest": "^24.0.18",
-    "@types/lodash": "^4.14.138",
-    "husky": "^3.0.5",
-    "jest": "^24.9.0",
-    "lint-staged": "^9.2.5",
-    "prettier": "^1.18.2",
-    "rollup": "^1.21.2",
-    "rollup-plugin-includepaths": "^0.2.3",
-    "rollup-plugin-typescript2": "^0.24.2",
-    "standard-version": "^7.0.0",
-    "tslint": "^5.20.0",
-    "typescript": "^3.6.3",
-    "typescript-tslint-plugin": "^0.5.4"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "chalk": "^2.4.2",
-    "commander": "^3.0.1",
-    "figlet": "^1.2.4",
-    "lodash": "^4.17.15",
-    "ora": "^3.4.0"
+    "core-js": "^3.3.2",
+    "vue": "^2.6.10",
+    "vue-router": "^3.1.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-plugin-router": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^5.16.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
+    "vue-template-compiler": "^2.6.10"
   }
 }
