@@ -2,7 +2,7 @@
   <div class="home">
     <FirebaseInitializer />
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <HelloWorld msg="Welcome to Your React.js App" />
   </div>
 </template>
 
