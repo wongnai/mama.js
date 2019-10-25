@@ -1,3 +1,4 @@
 module.exports = {
-  publicPath: "/firebase-playground"
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/firebase-playground" : "/"
 };
