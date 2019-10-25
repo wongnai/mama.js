@@ -17,6 +17,7 @@ export default {
         /(['"])?([a-z0-9A-Z_]+)(['"])?:/g,
         '"$2": '
       );
+      alert(goodConfig)
     }
   },
   data() {
