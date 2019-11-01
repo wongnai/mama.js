@@ -17,10 +17,11 @@ export default {
         /(['"])?([a-z0-9A-Z_]+)(['"])?:/g,
         '"$2": '
       );
-      alert(goodConfig)
+      alert(goodConfig);
     }
   },
   data() {
+    // Hello
     return {
       firebaseConfig: JSON.stringify({})
     };
