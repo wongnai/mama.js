@@ -23,6 +23,10 @@
   },
   "homepage": "https://github.com/wongnai/mama.js#readme",
   "devDependencies": {
+    "@types/execa": "^2.0.0",
+    "@types/jest": "^24.0.18",
+    "@types/make-dir": "^2.1.0",
+    "@types/ora": "^3.2.0",
     "@types/figlet": "^1.2.0",
     "@types/jest": "^24.0.18",
     "@types/lodash": "^4.14.138",
@@ -39,6 +43,11 @@
     "typescript-tslint-plugin": "^0.5.4"
   },
   "dependencies": {
+    "cli-progress": "^3.1.0",
+    "commander": "^3.0.1",
+    "execa": "^2.0.4",
+    "lodash": "^4.17.15",
+    "make-dir": "^3.0.0",
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
     "figlet": "^1.2.4",
