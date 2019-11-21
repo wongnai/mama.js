@@ -3,35 +3,26 @@
 // TODO
 // - projectInitializer(projectName)
 // - packageInstaller(dependencies)
-import cliProgress from 'cli-progress'
 import execa from 'execa'
-
-const bar = new cliProgress.Bar({}, cliProgress.Presets.shades_classic)
+import ora from 'ora'
 
 async function installCommand(items: string[], command: string, path: string) {
-  bar.start(items.length, 0)
-  let i = 0
   for (const lib of items) {
+    const spinner = ora(`Installing ${lib}`).start()
     await execa.command(`${command} ${lib}`, {
       cwd: path,
     })
-    bar.update(++i)
+    spinner.stopAndPersist({
+      symbol: '💬',
+      text: `${lib} is installed!`,
+    })
   }
-  bar.stop()
 }
 
 export async function installDependencies(path: string) {
   const dependencies = ['lodash']
   const devDependencies = [
-    'typescript',
-    'tslint',
-    'typescript-tslint-plugin',
-    'rollup',
-    'lint-staged',
-    'prettier',
-    'jest',
-    'standard-version',
-    'husky',
+    'mama-noodle',
   ]
   await installCommand(dependencies, 'npm i', path)
   await installCommand(devDependencies, 'npm i -D', path)

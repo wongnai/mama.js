@@ -1,7 +1,6 @@
 import { template } from 'lodash'
 
-export const tslint = template(`
-{
+export const tslint = `{
     "defaultSeverity": "error",
     "extends": [
         "tslint:recommended"
@@ -14,10 +13,9 @@ export const tslint = template(`
     },
     "rulesDirectory": []
 }
-`)
+`
 
-export const tsconfig = template(`
-{
+export const tsconfig = `{
   "compilerOptions": {
     "target": "es5",
     "module": "esnext",
@@ -35,28 +33,25 @@ export const tsconfig = template(`
     "declaration": true
   }
 }
-`)
+`
 
-export const lintStaged = template(`
-{
+export const lintStaged = `{
   "*.ts": [
     "prettier --write",
     "tslint --fix",
     "git add"
   ]
 }
-`)
+`
 
-export const husky = template(`
-{
+export const husky = `{
   "hooks": {
     "pre-commit": "lint-staged"
   }
 }
-`)
+`
 
-export const gitignore = template(`
-# Logs
+export const gitignore = `# Logs
 logs
 *.log
 npm-debug.log*
@@ -118,10 +113,9 @@ typings/
 
 # next.js build output
 .next
-`)
+`
 
-export const prettier = template(`
-{
+export const prettier = `{
   "parser": "typescript",
   "printWidth": 80,
   "tabWidth": 2,
@@ -133,4 +127,4 @@ export const prettier = template(`
   "jsxBracketSameLine": false,
   "arrowParens": "avoid"
 }
-`)
+`

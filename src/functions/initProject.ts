@@ -6,12 +6,14 @@ export async function initProject(projectName: string) {
   const path = makeDir.sync(projectName)
   const spinner = ora('Initializing project').start()
 
-  execa.command('npm init -y', {
+  await execa.command('npm init -y', {
     cwd: path,
   })
 
   spinner.stopAndPersist({
-    symbol: '👌',
-    text: `${projectName} is initialized at ${path}`,
+    symbol: '♨️',
+    text: ` ${projectName} is initialized at ${path}`,
   })
+
+  return path
 }
