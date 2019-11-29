@@ -4,7 +4,7 @@ import ora from 'ora'
 
 export async function initProject(projectName: string) {
   const path = makeDir.sync(projectName)
-  const spinner = ora('Initializing project').start()
+  const spinner = ora('Cooking project').start()
 
   await execa.command('npm init -y', {
     cwd: path,
@@ -12,7 +12,7 @@ export async function initProject(projectName: string) {
 
   spinner.stopAndPersist({
     symbol: '♨️',
-    text: ` ${projectName} is initialized at ${path}`,
+    text: ` ${projectName} is cooked at ${path}`,
   })
 
   return path

@@ -8,22 +8,20 @@ import ora from 'ora'
 
 async function installCommand(items: string[], command: string, path: string) {
   for (const lib of items) {
-    const spinner = ora(`Installing ${lib}`).start()
+    const spinner = ora(`Adding seasoning ${lib}`).start()
     await execa.command(`${command} ${lib}`, {
       cwd: path,
     })
     spinner.stopAndPersist({
       symbol: '💬',
-      text: `${lib} is installed!`,
+      text: `${lib} is added!`,
     })
   }
 }
 
 export async function installDependencies(path: string) {
   const dependencies = ['lodash']
-  const devDependencies = [
-    'mama-noodle',
-  ]
+  const devDependencies = ['mama-noodle']
   await installCommand(dependencies, 'npm i', path)
   await installCommand(devDependencies, 'npm i -D', path)
 }

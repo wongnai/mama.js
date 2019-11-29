@@ -1,5 +1,3 @@
-import { template } from 'lodash'
-
 export const tslint = `{
     "defaultSeverity": "error",
     "extends": [
