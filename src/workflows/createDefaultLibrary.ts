@@ -5,7 +5,7 @@ import { initGit } from 'functions/gitInitializer'
 import { initProject } from 'functions/initProject'
 
 export async function createDefaultLibraryFlow(name: string) {
-  console.log(chalk.blueBright(`We are initializing ${name} for you!\n`))
+  console.log(chalk.blueBright(`We are cooking ${name} for you!\n`))
 
   const projectPath = await initProject(name)
 
@@ -15,7 +15,7 @@ export async function createDefaultLibraryFlow(name: string) {
 
   await initGit(projectPath)
 
-  console.log(chalk.greenBright(`\n${name} is ready!\n`))
+  console.log(chalk.greenBright(`\n${name} is ready to eat!\n`))
   console.log(`cd ${name}`)
   console.log(`code .`)
   process.exit(0)
